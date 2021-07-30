@@ -1,0 +1,61 @@
+:root {
+    --color-background: #000000;
+    --stroke-width: calc(1em / 16);
+    --font-size: 25vmin;
+    --font-weight: 700;
+    --letter-spacing: calc(1em / 8);
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-background);
+    display: grid;
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-items: center;
+    place-items: center;
+    padding: 5vmin;
+}
+
+h1 {
+    -webkit-background-clip: text;
+    background-image: -webkit-gradient(linear, left top,
+    right top,
+    from(#9400D3),
+    color-stop(#4B0082),
+    color-stop(#0000FF),
+    color-stop(#00FF00),
+    color-stop(#FFFF00),
+    color-stop(#FF7F00),
+    to(#FF0000));
+    background-image: -o-linear-gradient(left,
+    #9400D3,
+    #4B0082,
+    #0000FF,
+    #00FF00,
+    #FFFF00,
+    #FF7F00,
+    #FF0000);
+    background-image: linear-gradient(to right,
+    #9400D3,
+    #4B0082,
+    #0000FF,
+    #00FF00,
+    #FFFF00,
+    #FF7F00,
+    #FF0000);
+    color: var(--color-background);
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
+    letter-spacing: var(--letter-spacing);
+    -webkit-text-stroke-color: transparent;
+    -webkit-text-stroke-width: var(--stroke-width);
+}
